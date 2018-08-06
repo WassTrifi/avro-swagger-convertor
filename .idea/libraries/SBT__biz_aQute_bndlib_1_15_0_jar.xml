@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: biz.aQute:bndlib:1.15.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/biz.aQute/bndlib/jars/bndlib-1.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/biz.aQute/bndlib/srcs/bndlib-1.15.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

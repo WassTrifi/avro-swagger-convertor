@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: io.swagger:swagger-compat-spec-parser:1.0.22:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.swagger/swagger-compat-spec-parser/jars/swagger-compat-spec-parser-1.0.22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.swagger/swagger-compat-spec-parser/srcs/swagger-compat-spec-parser-1.0.22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

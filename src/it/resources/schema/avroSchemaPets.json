@@ -1,0 +1,260 @@
+{
+  "type": "record",
+  "name": "WarehouseDeliverySc",
+  "namespace": "logistic.v2",
+  "doc": "Shipping Container of warehouse delivery",
+  "fields": [
+    {
+      "name": "sscc",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Serial shipping container code (Id of transport units)",
+      "default": null
+    },
+    {
+      "name": "trackingId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Tracking Identifier",
+      "default": null
+    },
+    {
+      "name": "whsDelScLine",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "WarehouseDeliveryScLine",
+            "doc": "Shipping Container (SC) detail of warehouse delivery",
+            "fields": [
+              {
+                "name": "delLineId",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "id of the delivery line",
+                "default": null
+              },
+              {
+                "name": "prdIflsCode",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "IFLS code",
+                "default": null
+              },
+              {
+                "name": "vlKey",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Logistical variant of a given Logistic Unit",
+                "default": null
+              },
+              {
+                "name": "itemKey",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Internal Code of the Product",
+                "default": null
+              },
+              {
+                "name": "itemUlKey",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Logistics unit number",
+                "default": null
+              },
+              {
+                "name": "delUnitQty",
+                "type": [
+                  "null",
+                  "double"
+                ],
+                "doc": "Quantity of units delivered",
+                "default": null
+              },
+              {
+                "name": "netWeight",
+                "type": [
+                  "null",
+                  "double"
+                ],
+                "doc": "net weight",
+                "default": null
+              },
+              {
+                "name": "delGapType",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Reason code for a non shipped delivery line",
+                "default": null
+              },
+              {
+                "name": "supLotNum",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Supplier lot (batch) number for the item",
+                "default": null
+              },
+              {
+                "name": "prdLotNum",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Id of the lot of the product inside Infolog (for product managed by Lot)",
+                "default": null
+              },
+              {
+                "name": "ssccStk",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Serial shipping container code (Id of transport units) when taken from the stock",
+                "default": null
+              },
+              {
+                "name": "prdEolDate",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "End of life date for a product",
+                "default": null
+              },
+              {
+                "name": "ssccDel",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Serial shipping container code (Id of transport units) of the pallet delivered",
+                "default": null
+              },
+              {
+                "name": "orderPickerId",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Id of the order picker",
+                "default": null
+              },
+              {
+                "name": "pickingType",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "type of picking",
+                "default": null
+              },
+              {
+                "name": "subUnitNbrCase",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "doc": "Number of units in a purchasing sub-box",
+                "default": null
+              },
+              {
+                "name": "unitNbrCase",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "doc": "Number of units in a purchasing box",
+                "default": null
+              },
+              {
+                "name": "packagingType",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "type of packaging",
+                "default": null
+              },
+              {
+                "name": "ordAllocRejectType",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Type of rejection cause (follow up the allocation process from logistics to store)",
+                "default": null
+              },
+              {
+                "name": "sscc",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Serial shipping container code (Id of transport units)",
+                "default": null
+              },
+              {
+                "name": "sealCode",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Code of the seal",
+                "default": null
+              },
+              {
+                "name": "grossWeight",
+                "type": [
+                  "null",
+                  "double"
+                ],
+                "doc": "gross weight",
+                "default": null
+              },
+              {
+                "name": "ssccParent",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Serial shipping container code (Id of transport units) of the parrent logistical unit",
+                "default": null
+              },
+              {
+                "name": "caseVolume",
+                "type": [
+                  "null",
+                  "double"
+                ],
+                "doc": "volume of the case (packaging)",
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "doc": "Array of warehouse delivery Shipping Container (SC) detail",
+      "default": null
+    }
+  ]
+}
